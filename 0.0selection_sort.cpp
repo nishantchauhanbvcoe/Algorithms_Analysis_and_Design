@@ -56,19 +56,19 @@ int main()
         selectionSort(arr, n);
 
         //AVERAGE
-        int x = n;
         for(int i=0;i<n;i++)
         {
-            arr[i] = x;
-            x = x-1;
+            arr[i] = rand()%n;
         }
         cout<<"\n>>Average Case\n";
         selectionSort(arr, n);
 
         //WORST
+        int x = n;
         for(int i=0;i<n;i++)
         {
-            arr[i] = 0;
+            arr[i] = x;
+            x = x-1;
         }
         cout<<"\n>>Worst Case\n";
         selectionSort(arr, n);
